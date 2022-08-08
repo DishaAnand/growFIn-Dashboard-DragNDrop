@@ -2,4 +2,4 @@
 
 
 Live Deployed Link: 
-https://csb-oyyhk9-7lmd0bor5-dishaanand.vercel.app/
+https://csb-oyyhk9.vercel.app/
