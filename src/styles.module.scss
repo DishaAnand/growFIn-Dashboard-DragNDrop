@@ -1,0 +1,149 @@
+:root{
+  background-color: #F5F5F5;
+}
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.App {
+  font-family: -apple-system, BlinkMacSystemFont;
+  text-align: center;
+  width: 100vw;
+  height: 95vh;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  // overflow-x: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.timerContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  height: 72px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.mainSection {
+  padding-top: 2rem;
+  max-width: 510px;
+  min-width: 400px;
+  height: fit-content;
+  &:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s;
+  }
+  transition: transform 0.3s;
+}
+
+.clockHolder {
+  width: 100%;
+  background: #fff;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.stopWatch {
+  padding: 0 15px;
+}
+.stopWatch span{
+  display: inline-block;
+  font-size: 30px;
+  padding: 5px 0;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.alphaTimeText span{
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.numericTimeText{
+  &:first-child{
+    margin-left: -10px;
+  }
+}
+.stopwatchBtnRes{
+  color: red;
+  background-color:red;
+}
+
+.stopwatchBtnStart {
+  color: #389E0D;
+  padding: 10px;
+  border: 1px solid #389E0D;
+  background-color: #fff;
+}
+
+.stopwatchBtnStop {
+  color: #F5222D;
+  padding: 10px;
+  border: 1px solid #F5222D;
+  background-color: #fff;
+}
+
+
+.stopwatchBtnReset {
+  color: #FFC53D;
+  padding: 10px;
+  border: 1px solid #FFC53D;
+  background-color: #fff;
+}
+
+.stopwatchBtnResume {
+  color: skyblue;
+  padding: 10px;
+  border: 1px solid skyblue;
+  background-color: #fff;
+}
+
+.dropdown{
+    position: absolute;
+    margin: 20px;
+    right: 0;
+    width: 150px;
+}
+.placeholderText{
+  color: #531DAB;
+}
+.emptyPage{
+  position: absolute;
+  top: 15rem;
+}
+.removeTimer{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  color: rgb(245, 135, 135);
+  cursor: pointer;
+}
+.timerText{
+  text-align: left;
+  padding: 15px;
+}
+.grayText{
+  color: #BFBFBF;
+}
+.footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
